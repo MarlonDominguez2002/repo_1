@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Html CRUD con JavaScript puro
+    </title>
+    <link rel="stylesheet" href="css/css_crud_persona.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <form onsubmit="event.preventDefault();enviarFormulario();"autocomplete="off">
+                <td>
+                    <div>
+                        <label>Nombre Completo*</label><label class="validation-error hide"
+                            id="nombreCompletoEmpleadoValidacionError"> Este campo es obligatorio.</label>
+                        <input type="text" name="nombreCompletoEmp" id="nombreCompletoEmpleado">
+                    </div>
+                    <div>
+                        <label>Código Empleado</label>
+                        <input type="text" id="codigoEmpleado" name="idEmpleado">
+                    </div>
+                    <div>
+                        <label>SALARIO</label>
+                        <input type="text" id="salarioEmpleado" name="salarioEmp">
+                    </div>
+                    <div>
+                        <label>CIUDAD</label>
+                        <input type="text" id="ciudadEmpleado" name="ciudadEmp">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+            </form>
+            </td>
+            <td>
+                <table class="list" id="empleadoList">
+<thead>
+<tr>
+<th>NOMBRE COMPLETO</th>
+<th>CODIGO EMPLEADO</th>
+<th>SALARIO</th>
+<th>CIUDAD</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+        </td>
+        </tr>
+    </table>
+    <script src="js/script.js">
+    </script>
+</body>
+
+</html>
